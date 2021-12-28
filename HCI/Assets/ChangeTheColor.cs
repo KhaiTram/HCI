@@ -27,27 +27,7 @@ public class ChangeTheColor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!buttonJustPressed)
-        {
-            if (Input.GetKey(KeyCode.A) && !toggleLightSwitch)
-            {
-                toggleLightSwitch = true;
-                buttonJustPressed = true;
-            }
-            else if (Input.GetKey(KeyCode.A) && toggleLightSwitch)
-            {
-                toggleLightSwitch = false;
-
-                buttonJustPressed = true;
-            }
-        }
-        else if (buttonJustPressed)
-        {
-            if (!Input.GetKey(KeyCode.A))
-                buttonJustPressed = false;
-        }
-
-        if (toggleLightSwitch)
+        if (inGameActiveFilterUI.activeFilter == Filter.LIGHT_SWITCH)
             red = 255;
         else
             red = 0;

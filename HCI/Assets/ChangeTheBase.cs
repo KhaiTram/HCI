@@ -24,7 +24,7 @@ public class ChangeTheBase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ChangeTheColor.toggleLightSwitch)
+        if (inGameActiveFilterUI.activeFilter == Filter.LIGHT_SWITCH)
             blue = 255;
         else
             blue = 0;
