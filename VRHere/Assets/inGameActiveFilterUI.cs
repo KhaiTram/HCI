@@ -3,8 +3,8 @@ using UnityEngine.UI;
 
 class inGameActiveFilterUI : MonoBehaviour
 {
-    public const string DEFAULT_TEXT = "Active filters (press 'F' to toggle)";
-    
+    public const string DEFAULT_TEXT = "Change Active filter ";
+
     private Text displayedText;
     private bool buttonJustPressed;
 
