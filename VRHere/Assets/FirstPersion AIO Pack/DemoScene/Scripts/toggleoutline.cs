@@ -1,17 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class toggleoutline : MonoBehaviour
 {
     Outline outline;
-    bool buttonpressed;
     // Start is called before the first frame update
     void Start()
     {
         outline = GetComponent<Outline>();
         outline.enabled = false;
-        buttonpressed=false;
 
     }
 
@@ -21,24 +17,21 @@ public class toggleoutline : MonoBehaviour
     {
 
 
-        if(Input.GetKey(KeyCode.L))
+        if (Input.GetKey(KeyCode.L))
         {
-            if(outline.enabled==true)
+            if (outline.enabled == true)
             {
-                outline.enabled= false;
-                buttonpressed = true;
+                outline.enabled = false;
             }
 
-            if(outline.enabled==false)
+            if (outline.enabled == false)
             {
-               outline.enabled= true;
-               buttonpressed = true;
+                outline.enabled = true;
             }
         }
-        
-        if(!Input.GetKey(KeyCode.L))
-            {
-                buttonpressed = false;
-            }
+
+        if (!Input.GetKey(KeyCode.L))
+        {
+        }
     }
 }

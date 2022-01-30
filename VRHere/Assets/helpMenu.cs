@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,6 +22,8 @@ class helpMenu : MonoBehaviour
         helpStatus = false;
 
         GetChildWithName(this.gameObject, "extendedHelpPanel").SetActive(false);
+        // Initialize Element
+        UpdateText();
     }
 
     // Update is called once per frame
