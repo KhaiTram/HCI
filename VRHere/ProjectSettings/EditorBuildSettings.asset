@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/VRHere.unity
+    guid: 8f4d13e84d5d1c6488bed58e218a966a
   - enabled: 1
     path: Assets/CabinVR.unity
     guid: d2e548510c51ed54b8abfd672ca53b8f
